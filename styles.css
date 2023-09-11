@@ -40,6 +40,11 @@ div.heading > .menu > a {
 	text-decoration: none;
 }
 
+div.heading > .menu > a:hover {
+	cursor: pointer;
+	color: hsl(var(--color-primary-soft-red));
+}
+
 div.heading > .icon-menu {
 	display: none;
 }
@@ -102,6 +107,12 @@ div.main > .left > .details > .content > button {
 	font-weight: bold;
 }
 
+div.main > .left > .details > .content > button:hover {
+	border-color: hsl(var(--color-neutral-very-dark-blue));
+	background-color: hsl(var(--color-neutral-very-dark-blue));
+	cursor: pointer;
+}
+
 div.main > .right {
 	background-color: hsl(var(--color-neutral-very-dark-blue));
 	padding: 1rem 1.5rem;
@@ -160,6 +171,11 @@ div.articles > .top > .details > .title {
 	color: hsl(var(--color-neutral-very-dark-blue));
 	font-weight: bold;
 	font-size: 1.3rem;
+}
+
+div.articles > .top > .details > .title:hover {
+	cursor: pointer;
+	color: hsl(var(--color-primary-soft-red));
 }
 
 div.articles > .top > .details > .subtitle {
@@ -228,6 +244,14 @@ div.articles > .top > .details > .subtitle {
 		display: flex;
 		flex-direction: column;
 	}
+
+	div.main > .left > .details > .content {
+		margin-left: 0rem;
+	}
+
+	div.main > .left > .details > .content > p {
+		margin-top: 0rem;
+	}
 	
 	div.main > .left > .details > .title {
 		margin-right: 0rem;
@@ -241,6 +265,7 @@ div.articles > .top > .details > .subtitle {
 	
 	div.main > .right {
 		margin-bottom: 1rem;
+		height: 35rem;
 	}
 	
 	div.articles {
